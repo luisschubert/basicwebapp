@@ -23,3 +23,12 @@ Specifies heroku configuration.
 
 #### `app.json` Heroku
 The heroku app file.
+
+
+
+#### Dependencies
+- Node & NPM: https://nodejs.org/en/download/
+- Heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
+- Heroku Account: https://signup.heroku.com/
+- Git: https://git-scm.com/downloads
+- Github Account: https://github.com/join
