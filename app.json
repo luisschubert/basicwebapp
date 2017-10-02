@@ -1,0 +1,6 @@
+{
+  "name": "Basic Web App",
+  "description": "A basic web app",
+  "repository": "https://github.com/luisschubert/basicwebapp",
+  "keywords": ["node", "express"]
+}
