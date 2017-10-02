@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
     })
 });
 
-// state the por number for where to listen to the web server
+// set the port number of the webserver for listening it HTTP Requests
 app.listen(app.get('port'), () => {
     console.log(`Node.js server is running`);
     console.log(`Listening for clients on port ${app.get('port')}`);
