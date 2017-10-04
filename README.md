@@ -1,5 +1,16 @@
 # basicwebapp
-A basic deployable web app.
+> A basic deployable web app.
+
+You want to make a web app but you don't know where to start.
+- Write your client code in HTML, Javascript, CSS in pageview.html.
+- Write your webserver code in index.js (for NodeJS).
+
+#### Dependencies
+- Node & NPM: https://nodejs.org/en/download/
+- Heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
+- Heroku Account: https://signup.heroku.com/
+- Git: https://git-scm.com/downloads
+- Github Account: https://github.com/join
 
 ## How to run
 #### deploy locally 
@@ -70,10 +81,9 @@ Specifies heroku configuration.
 The heroku app file.
 
 
-
-#### Dependencies
-- Node & NPM: https://nodejs.org/en/download/
-- Heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
-- Heroku Account: https://signup.heroku.com/
-- Git: https://git-scm.com/downloads
-- Github Account: https://github.com/join
+## Notes:
+For your web server code you could be using many different programming languages.
+Among the most comment are:
+PHP,
+Python,
+NodeJS
