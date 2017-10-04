@@ -1,6 +1,30 @@
 <html>
 <script>
     console.log("hello from your javascript console");
+    function dark(){
+        //let url = ;
+        console.log('changing background to cassini photo');
+        let body = document.querySelector('body');
+        let button = document.querySelector('button');
+
+        if (button.textContent == "Dark Mode"){
+            button.textContent = "Light Mode";
+            button.style.background = 'black';
+            button.style.color ='white';
+            body.style.background = 'black';
+            body.style.color ='white';
+        }
+        else if (button.textContent == "Light Mode"){
+            button.textContent = "Dark Mode";
+            button.style.background = 'white';
+            button.style.color = 'black';
+            body.style.background = 'white';
+            body.style.color ='black';
+        }
+
+        // element.setAttribute('background-image',"url:'https://saturn.jpl.nasa.gov/system/resources/detail_files/7769_PIA21628_figA-MAIN.jpg'");
+    }
+
 </script>
 <style>
 body {
@@ -72,7 +96,17 @@ body {
         outline: none;
     }
     a:visited{
-        color:blue;
+        color:lightblue;
+    }
+    a {
+        color:lightblue;
+    }
+    ul{
+        list-style-type:none
+    }
+    button{
+        background: white;
+        color:black;
     }
 </style>
 <body>
@@ -82,23 +116,71 @@ body {
         </div>
     </div>
     <div class='contentContainer'>
-        <ol>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML basics</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS basics</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"> JavaScript basics</a></li>
-            <li><a href="http://rogerdudler.github.io/git-guide/">Git basics</a></li>
-            <li>A little history about javascript: <a href="https://en.wikipedia.org/wiki/ECMAScript">wikipedia article</a></li>
-            <li><a href="https://nodejs.org/en/">NodeJS</a> - Download:<a href="">here<a></li>
-            <li><a href=""></a> - Download:<a href="">here<a></li>
-            <li><a href="http://php.net/">PHP</a> - Download:<a href="http://php.net/downloads.php">here<a></li>
-            <li><a href="https://nodejs.org/en/">NodeJS</a> - Download:<a href="">here<a></li>
-            <li>Python - <a href="https://www.djangoproject.com/">Django</a> - Download:<a href="https://www.djangoproject.com/download/">here<a></li>
-            <li>Python - <a href="http://flask.pocoo.org/">Flask</a> - Download:<a href="https://pypi.python.org/pypi/Flask/0.12.2">here<a></li>
-            <li>Java<a href="https://spring.io/">Spring</a> - Download:<a href="https://projects.spring.io/spring-framework/">here<a></li>
-            <li>Java/Scala<a href="https://www.playframework.com/"></a> - Download:<a href="https://www.playframework.com/download">here<a></li>
-            <li>Ruby<a href="http://rubyonrails.org/">Rails</a> - Download:<a href="http://weblog.rubyonrails.org/2017/9/7/Rails-5-1-4-and-5-0-6-released/">here<a></li>
-        <ol>
+        <h3>basics</h3>
+        <ul>
+            <li><a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                >HTML basics</a></li>
+            <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                CSS basics</a></li>
+            <li><a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">
+                JavaScript basics</a></li>
+            <li><a
+                href="http://rogerdudler.github.io/git-guide/">
+                Git basics</a></li>
+            <li>A little history about javascript: <a
+                href="https://en.wikipedia.org/wiki/ECMAScript">
+                Ecmascript wikipedia article</a></li>
+        </ul>
     </div>
+    <div class='contentContainer'>
+        <h3>webserving</h3>
+        <ul>
+            <!-- Below line is for copying/pasting. -->
+            <!-- <li><a href=""></a> - Download:<a href="">here<a></li> -->
+            <li><a
+                href="http://php.net/">PHP</a> - Download:<a
+                href="http://php.net/downloads.php">here</a></li>
+
+            <li>JavaScript - <a
+                href="https://nodejs.org/en/">NodeJS</a> - Download:<a
+                href="https://nodejs.org/en/download/">here</a>
+            </li>
+
+            <li>Javascript - <a
+                href="https://expressjs.com/">Express</a> - Download:<a
+                href="https://www.npmjs.com/package/express">here</a>
+            </li>
+
+            <li>Python - <a
+                href="https://www.djangoproject.com/">Django</a> - Download:<a
+                href="https://www.djangoproject.com/download/">here</a>
+            </li>
+
+            <li>Python - <a
+                href="http://flask.pocoo.org/">Flask</a> - Download:<a
+                href="https://pypi.python.org/pypi/Flask/0.12.2">here</a>
+            </li>
+
+            <li>Java - <a
+                href="https://spring.io/">Spring</a> - Download:<a
+                href="https://projects.spring.io/spring-framework/">here</a>
+            </li>
+
+            <li>Java/Scala - <a
+                href="https://www.playframework.com/">Play</a> - Download:<a
+                href="https://www.playframework.com/download">here</a>
+            </li>
+
+            <li>Ruby - <a
+                href="http://rubyonrails.org/">Rails</a> - Download:<a
+                href="http://weblog.rubyonrails.org/2017/9/7/Rails-5-1-4-and-5-0-6-released/">here</a>
+            </li>
+        <ul>
+    </div>
+    <button id='mode' onclick=dark()>Dark Mode</button>
 </body>
 </html>
 <!-- "“Good artists copy. Great artists steal.” - Pablo Picasso" - Steve Jobs -->
