@@ -88,8 +88,8 @@ The heroku app file.
 ## Notes:
 For your web server code you could be using many different programming languages.
 Amongst the most common are:
-- PHP,
-- Python,
+- PHP
+- Python
 - NodeJS
 - Java
 - Scala
